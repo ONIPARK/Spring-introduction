@@ -14,13 +14,13 @@ java {
 }
 
 repositories {
-	mavenCentral()
+	mavenCentral() // 公開されたサイトで、インストール設定
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // テンプレートエンジン
+	implementation 'org.springframework.boot:spring-boot-starter-web' // Web Project
+	testImplementation 'org.springframework.boot:spring-boot-starter-test' // test template: JUnit
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
