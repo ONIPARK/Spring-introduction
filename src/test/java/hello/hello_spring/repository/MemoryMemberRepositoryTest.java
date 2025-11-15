@@ -1,7 +1,6 @@
-package hellospring.repository;
+package hello.hello_spring.repository;
 
-import hello.hellospring.repository.MemoryMemberRepository;
-import hello.hellospring.domain.Member;
+import hello.hello_spring.domain.Member;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 

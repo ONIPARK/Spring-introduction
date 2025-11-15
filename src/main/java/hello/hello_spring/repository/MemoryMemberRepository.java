@@ -1,12 +1,14 @@
-package hello.hellospring.repository;
+package hello.hello_spring.repository;
 
-import hello.hellospring.domain.Member;
+import hello.hello_spring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 /*
 * 同時性問題が考慮できていないため、実務では ConcurrentHashMap, AtomicLong 使用考慮
 * */
+@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
