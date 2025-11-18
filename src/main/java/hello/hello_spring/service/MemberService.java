@@ -36,7 +36,7 @@ public class MemberService {
     private void validateDuplicateMember(Member member) {
         memberRepository.findByName(member.getName())
                 .ifPresent(m -> {
-                    throw new IllegalStateException("すでに存在する会員です。");
+                    throw new IllegalStateException("すでに存在している会員です。");
                 });
     }
 
