@@ -25,9 +25,22 @@ public class MemberService {
     * */
     public Long join(Member member) {
 
-        validateDuplicateMember(member); //重複会員検証
-        memberRepository.save(member);
-        return member.getId();
+            validateDuplicateMember(member); //重複会員検証
+            memberRepository.save(member);
+            return member.getId();
+
+
+
+//        long start = System.currentTimeMillis();
+//        try {
+//            validateDuplicateMember(member); //重複会員検証
+//            memberRepository.save(member);
+//            return member.getId();
+//        } finally {
+//            long finish = System.currentTimeMillis();
+//            long timeMs = finish - start;
+//            System.out.println("join = " + timeMs + "ms");
+//        }
     }
 
 //    Optional<Member> result = memberRepository.findById(member.getName);
